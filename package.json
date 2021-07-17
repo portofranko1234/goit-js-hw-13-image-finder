@@ -1,12 +1,12 @@
 {
-  "name": "goit-js-hw-12-countries",
+  "name": "goit-js-hw-13-image-finder",
   "version": "1.1.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://portofranko1234.github.io/goit-js-hw-12-countries/",
+  "homepage": "https://portofranko1234.github.io/goit-js-hw-13-image-finder/",
   "scripts": {
     "dev": "parcel src/index.html",
-    "build": "parcel build src/index.html --public-url /goit-js-hw-12-countries/"
+    "build": "parcel build src/index.html --public-url /goit-js-hw-13-image-finder/"
   },
   "repository": {
     "type": "git",
