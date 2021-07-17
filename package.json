@@ -1,0 +1,38 @@
+{
+  "name": "goit-js-hw-12-countries",
+  "version": "1.1.0",
+  "description": "",
+  "main": "index.js",
+  "homepage": "https://portofranko1234.github.io/goit-js-hw-12-countries/",
+  "scripts": {
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html --public-url /goit-js-hw-12-countries/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/goitacademy/parcel-project-template.git"
+  },
+  "keywords": [],
+  "author": "Alexander Repeta <alexander.repeta@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/goitacademy/parcel-project-template/issues"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5",
+    "parcel-plugin-handlebars-precompile": "^1.0.2",
+    "parcel-plugin-nuke-dist": "^1.0.1",
+    "pnotify": "^5.2.0",
+    "posthtml-include": "^1.6.2",
+    "sass": "^1.32.8"
+  },
+  "dependencies": {
+    "@pnotify/core": "^5.2.0",
+    "@pnotify/mobile": "^5.2.0",
+    "autoprefixer": "^10.2.6",
+    "fontsource-indie-flower": "^4.0.0",
+    "lodash.debounce": "^4.0.8",
+    "material-design-icons": "^3.0.1",
+    "postcss": "^8.3.5"
+  }
+}
