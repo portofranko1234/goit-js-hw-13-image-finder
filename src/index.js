@@ -28,13 +28,11 @@ function onSearch(event) {
   loadMoreBtn.disable();
   apiService.resetPage();
 
-  if (apiService.query.trim() === '') {
-    alert('введите ключевое слово для начала поиска');
-    return;
-  }
-
   apiService.goFetch().then(hits => {
-    if (apiService.query.hits === undefined) {
+    if (apiService.query.hits !== undefined) {
+      onSearchError();
+    }
+    if (apiService.query.trim() !== '') {
       onSearchError();
     }
     clearGallery();
@@ -44,10 +42,6 @@ function onSearch(event) {
 }
 
 function onLoadMore() {
-  if (apiService.query.trim() === '') {
-    alert('введите ключевое слово для начала поиска');
-    return;
-  }
   loadMoreBtn.disable();
   apiService.goFetch().then(hits => {
     galleryMarkup(hits);
