@@ -29,12 +29,10 @@ function onSearch(event) {
   apiService.resetPage();
 
   apiService.goFetch().then(hits => {
-    if (apiService.query.hits !== undefined) {
+    if (apiService.query.trim() !== '' && hits.length === 0) {
       onSearchError();
     }
-    if (apiService.query.trim() !== '') {
-      onSearchError();
-    }
+
     clearGallery();
     galleryMarkup(hits);
     loadMoreBtn.enable();
@@ -46,6 +44,10 @@ function onLoadMore() {
   apiService.goFetch().then(hits => {
     galleryMarkup(hits);
     loadMoreBtn.enable();
+    window.scrollTo({
+      top: document.documentElement.scrollHeight,
+      behavior: 'smooth',
+    });
   });
 }
 
